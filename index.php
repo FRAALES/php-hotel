@@ -67,7 +67,6 @@ $hotels = [
         <table class="table table-info">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
                     <th scope="col">Nome Hotel</th>
                     <th scope="col">Descrizione</th>
                     <th scope="col">Parcheggio</th>
@@ -77,15 +76,17 @@ $hotels = [
             </thead>
             <tbody>
                 <?php
-                    echo "<tr>";
+                    
                     foreach ($hotels as $hotel) {
+                        echo "<tr>";
                         echo '<td>' . $hotel['name'] . '</td>';
                         echo '<td>' . $hotel['description'] . '</td>';
                         echo '<td>' . $hotel['parking'] . '</td>';
                         echo '<td>' . $hotel['vote'] . '</td>';
                         echo '<td>' . $hotel['distance_to_center'] . '</td>';
+                        echo "<tr>";
                     }
-                    echo "<tr>";
+                    
                 ?>
             </tbody>
         </table>
