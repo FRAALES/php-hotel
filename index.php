@@ -68,7 +68,7 @@ $hotels = [
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Nome Hotel</th>
+                    <th scope="col">1</th>
                     <th scope="col">Descrizione</th>
                     <th scope="col">Parcheggio</th>
                     <th scope="col">Voto</th>
@@ -77,7 +77,7 @@ $hotels = [
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
+                    <th scope="row">Nome Hotel</th>
                     <?php
                     foreach ($hotels as $hotel) {
                         echo '<td>' . $hotel['name'] . '</td>';
