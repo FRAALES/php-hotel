@@ -68,7 +68,7 @@ $hotels = [
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">1</th>
+                    <th scope="col">Nome Hotel</th>
                     <th scope="col">Descrizione</th>
                     <th scope="col">Parcheggio</th>
                     <th scope="col">Voto</th>
@@ -76,46 +76,17 @@ $hotels = [
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">Nome Hotel</th>
-                    <?php
+                <?php
+                    echo "<tr>";
                     foreach ($hotels as $hotel) {
                         echo '<td>' . $hotel['name'] . '</td>';
-                    }
-                    ?>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <?php
-                    foreach ($hotels as $hotel) {
                         echo '<td>' . $hotel['description'] . '</td>';
-                    }
-                    ?>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <?php
-                    foreach ($hotels as $hotel) {
                         echo '<td>' . $hotel['parking'] . '</td>';
-                    }
-                    ?>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <?php
-                    foreach ($hotels as $hotel) {
                         echo '<td>' . $hotel['vote'] . '</td>';
-                    }
-                    ?>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <?php
-                    foreach ($hotels as $hotel) {
                         echo '<td>' . $hotel['distance_to_center'] . '</td>';
                     }
-                    ?>
-                </tr>
+                    echo "<tr>";
+                ?>
             </tbody>
         </table>
             
