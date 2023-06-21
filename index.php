@@ -1,4 +1,13 @@
+<form method="GET">
+    <label for="search">Search:</label>
+    <input type="text" name="search">
+    <input type="submit" value="SEARCH">
+</form>
+
+
 <?php
+
+// var_dump($_GET);
 
 $hotels = [
 
@@ -43,7 +52,6 @@ $hotels = [
 // echo "<pre>";
 // var_dump ($hotels);
 // echo "</ pre";
-
 ?>
 
 
@@ -53,7 +61,7 @@ $hotels = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotels</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     
@@ -76,7 +84,6 @@ $hotels = [
             </thead>
             <tbody>
                 <?php
-                    
                     foreach ($hotels as $hotel) {
                         echo "<tr>";
                         echo '<td>' . $hotel['name'] . '</td>';
@@ -86,7 +93,6 @@ $hotels = [
                         echo '<td>' . $hotel['distance_to_center'] . '</td>';
                         echo "<tr>";
                     }
-                    
                 ?>
             </tbody>
         </table>
